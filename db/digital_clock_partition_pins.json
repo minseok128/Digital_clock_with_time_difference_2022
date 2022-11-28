@@ -4,11 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "monrnig",
+					"name" : "H4",
 					"strict" : false
 				},
 				{
-					"name" : "Afternoon",
+					"name" : "H3",
+					"strict" : false
+				},
+				{
+					"name" : "H2",
+					"strict" : false
+				},
+				{
+					"name" : "H1",
+					"strict" : false
+				},
+				{
+					"name" : "H0",
 					"strict" : false
 				},
 				{
@@ -344,27 +356,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "TimeDiff[5]",
+					"name" : "D3",
 					"strict" : false
 				},
 				{
-					"name" : "TimeDiff[4]",
-					"strict" : false
-				},
-				{
-					"name" : "TimeDiff[2]",
-					"strict" : false
-				},
-				{
-					"name" : "TimeDiff[0]",
-					"strict" : false
-				},
-				{
-					"name" : "TimeDiff[1]",
-					"strict" : false
-				},
-				{
-					"name" : "TimeDiff[3]",
+					"name" : "S",
 					"strict" : false
 				},
 				{
@@ -373,6 +369,26 @@
 				},
 				{
 					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "D0",
+					"strict" : false
+				},
+				{
+					"name" : "D1",
+					"strict" : false
+				},
+				{
+					"name" : "D2",
+					"strict" : false
+				},
+				{
+					"name" : "D5",
+					"strict" : false
+				},
+				{
+					"name" : "D4",
 					"strict" : false
 				},
 				{

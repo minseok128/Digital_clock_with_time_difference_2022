@@ -1,15 +1,15 @@
-Fitter Status : Successful - Mon Nov 28 16:01:47 2022
+Fitter Status : Successful - Mon Nov 28 19:04:45 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : digital_clock
 Top-level Entity Name : digital_clock
 Family : MAX 10
 Device : 10M08DAF484C8G
 Timing Models : Final
-Total logic elements : 101 / 8,064 ( 1 % )
-    Total combinational functions : 101 / 8,064 ( 1 % )
+Total logic elements : 119 / 8,064 ( 1 % )
+    Total combinational functions : 118 / 8,064 ( 1 % )
     Dedicated logic registers : 23 / 8,064 ( < 1 % )
 Total registers : 23
-Total pins : 97 / 250 ( 39 % )
+Total pins : 101 / 250 ( 40 % )
 Total virtual pins : 0
 Total memory bits : 0 / 387,072 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )

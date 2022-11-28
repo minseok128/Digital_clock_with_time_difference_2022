@@ -1,5 +1,5 @@
 EDA Netlist Writer report for digital_clock
-Sat Nov 26 21:57:42 2022
+Mon Nov 28 19:08:54 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Nov 26 21:57:42 2022 ;
+; EDA Netlist Writer Status ; Successful - Mon Nov 28 19:08:54 2022 ;
 ; Revision Name             ; digital_clock                         ;
 ; Top-level Entity Name     ; digital_clock                         ;
 ; Family                    ; MAX 10                                ;
@@ -67,13 +67,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                               ;
-+------------------------------------------------------------------------------------------+
-; Generated Files                                                                          ;
-+------------------------------------------------------------------------------------------+
-; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock/simulation/qsim//digital_clock.vo ;
-+------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim//digital_clock.vo ;
++-------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -96,15 +96,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Nov 26 21:57:41 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock/simulation/qsim/ digital_clock -c digital_clock
+    Info: Processing started: Mon Nov 28 19:08:53 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim/ digital_clock -c digital_clock
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file digital_clock.vo in folder "C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file digital_clock.vo in folder "C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4656 megabytes
-    Info: Processing ended: Sat Nov 26 21:57:42 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4655 megabytes
+    Info: Processing ended: Mon Nov 28 19:08:55 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

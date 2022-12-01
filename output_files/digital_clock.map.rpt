@@ -1,5 +1,5 @@
 Analysis & Synthesis report for digital_clock
-Thu Dec 01 20:54:08 2022
+Thu Dec 01 23:50:34 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,16 +44,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 01 20:54:08 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 01 23:50:34 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; digital_clock                               ;
 ; Top-level Entity Name              ; digital_clock                               ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 157                                         ;
-;     Total combinational functions  ; 153                                         ;
-;     Dedicated logic registers      ; 23                                          ;
-; Total registers                    ; 23                                          ;
-; Total pins                         ; 114                                         ;
+; Total logic elements               ; 212                                         ;
+;     Total combinational functions  ; 206                                         ;
+;     Dedicated logic registers      ; 41                                          ;
+; Total registers                    ; 41                                          ;
+; Total pins                         ; 110                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -162,7 +162,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -176,6 +177,7 @@ https://fpgasoftware.intel.com/eula.
 ; mod_6_counter_with_enable.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/mod_6_counter_with_enable.bdf              ;         ;
 ; mod_10_counter_with_enable.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/mod_10_counter_with_enable.bdf             ;         ;
 ; pulse_generator.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/pulse_generator.bdf                        ;         ;
+; full_adder.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/full_adder.bdf                             ;         ;
 ; mod_24_counter_with_enable.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/mod_24_counter_with_enable.bdf             ;         ;
 ; ham/ham_Modulo24.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/ham/ham_Modulo24.bdf                       ;         ;
 ; ham/ham_HA.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/ham/ham_HA.bdf                             ;         ;
@@ -188,39 +190,41 @@ https://fpgasoftware.intel.com/eula.
 ; ryu/ryu_checker.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/ryu/ryu_checker.bdf                        ;         ;
 ; ryu/ryu_21mux.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/ryu/ryu_21mux.bdf                          ;         ;
 ; Bin2TimeValue.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/Bin2TimeValue.bdf                          ;         ;
+; kim/kim_BCD_decorder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/kim/kim_BCD_decorder.bdf                   ;         ;
+; kim/kim_DialPad2Bin.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/kim/kim_DialPad2Bin.bdf                    ;         ;
 +--------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 157       ;
-;                                             ;           ;
-; Total combinational functions               ; 153       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 91        ;
-;     -- 3 input functions                    ; 53        ;
-;     -- <=2 input functions                  ; 9         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 153       ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 23        ;
-;     -- Dedicated logic registers            ; 23        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 114       ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 23        ;
-; Total fan-out                               ; 784       ;
-; Average fan-out                             ; 1.94      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 212        ;
+;                                             ;            ;
+; Total combinational functions               ; 206        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 123        ;
+;     -- 3 input functions                    ; 62         ;
+;     -- <=2 input functions                  ; 21         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 206        ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 41         ;
+;     -- Dedicated logic registers            ; 41         ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 110        ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; Zero~input ;
+; Maximum fan-out                             ; 27         ;
+; Total fan-out                               ; 994        ;
+; Average fan-out                             ; 2.13       ;
++---------------------------------------------+------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -228,12 +232,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                ; Entity Name                       ; Library Name ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+-----------------------------------+--------------+
-; |digital_clock                                ; 153 (5)             ; 23 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 114  ; 0            ; 0          ; |digital_clock                                                     ; digital_clock                     ; work         ;
-;    |Bin2TimeValue:inst18|                     ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|Bin2TimeValue:inst18                                ; Bin2TimeValue                     ; work         ;
-;    |Bin2TimeValue:inst19|                     ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|Bin2TimeValue:inst19                                ; Bin2TimeValue                     ; work         ;
-;    |ham_TimeAdder:inst16|                     ; 25 (6)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16                                ; ham_TimeAdder                     ; work         ;
+; |digital_clock                                ; 206 (5)             ; 41 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 110  ; 0            ; 0          ; |digital_clock                                                     ; digital_clock                     ; work         ;
+;    |Bin2TimeValue:inst18|                     ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|Bin2TimeValue:inst18                                ; Bin2TimeValue                     ; work         ;
+;    |Bin2TimeValue:inst19|                     ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|Bin2TimeValue:inst19                                ; Bin2TimeValue                     ; work         ;
+;    |ham_TimeAdder:inst16|                     ; 22 (2)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16                                ; ham_TimeAdder                     ; work         ;
 ;       |ham_D_Latch:inst2|                     ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_D_Latch:inst2              ; ham_D_Latch                       ; work         ;
-;       |ham_FA:inst11|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_FA:inst11                  ; ham_FA                            ; work         ;
+;       |ham_FA:inst10|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_FA:inst10                  ; ham_FA                            ; work         ;
+;       |ham_FA:inst11|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_FA:inst11                  ; ham_FA                            ; work         ;
 ;       |ham_FA:inst12|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_FA:inst12                  ; ham_FA                            ; work         ;
 ;       |ham_FA:inst13|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_FA:inst13                  ; ham_FA                            ; work         ;
 ;       |ham_FA:inst14|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_FA:inst14                  ; ham_FA                            ; work         ;
@@ -242,7 +247,33 @@ https://fpgasoftware.intel.com/eula.
 ;          |ham_FA:inst3|                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_Modulo24:inst|ham_FA:inst3 ; ham_FA                            ; work         ;
 ;          |ham_HA:inst|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ham_TimeAdder:inst16|ham_Modulo24:inst|ham_HA:inst  ; ham_HA                            ; work         ;
 ;    |hoon_segment_decorder_to_2_digits:inst12| ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|hoon_segment_decorder_to_2_digits:inst12            ; hoon_segment_decorder_to_2_digits ; work         ;
-;    |hoon_segment_decorder_to_2_digits:inst15| ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|hoon_segment_decorder_to_2_digits:inst15            ; hoon_segment_decorder_to_2_digits ; work         ;
+;    |hoon_segment_decorder_to_2_digits:inst15| ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|hoon_segment_decorder_to_2_digits:inst15            ; hoon_segment_decorder_to_2_digits ; work         ;
+;    |kim_DialPad2Bin:inst26|                   ; 28 (3)              ; 9 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26                              ; kim_DialPad2Bin                   ; work         ;
+;       |full_adder:inassfaafst|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|full_adder:inassfaafst       ; full_adder                        ; work         ;
+;       |full_adder:inst14|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|full_adder:inst14            ; full_adder                        ; work         ;
+;       |full_adder:inst15|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|full_adder:inst15            ; full_adder                        ; work         ;
+;       |full_adder:inst17|                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|full_adder:inst17            ; full_adder                        ; work         ;
+;       |full_adder:inst18|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|full_adder:inst18            ; full_adder                        ; work         ;
+;       |full_adder:inst19|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|full_adder:inst19            ; full_adder                        ; work         ;
+;       |ham_HA:inst16|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst16                ; ham_HA                            ; work         ;
+;       |ham_HA:inst20|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst20                ; ham_HA                            ; work         ;
+;       |ham_HA:inst21|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst21                ; ham_HA                            ; work         ;
+;       |ham_HA:inst22|                         ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst22                ; ham_HA                            ; work         ;
+;       |kim_BCD_decorder:indfsst|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|kim_BCD_decorder:indfsst     ; kim_BCD_decorder                  ; work         ;
+;       |pulse_generator:inst26|                ; 1 (1)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst26|pulse_generator:inst26       ; pulse_generator                   ; work         ;
+;    |kim_DialPad2Bin:inst27|                   ; 26 (3)              ; 9 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27                              ; kim_DialPad2Bin                   ; work         ;
+;       |full_adder:inassfaafst|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|full_adder:inassfaafst       ; full_adder                        ; work         ;
+;       |full_adder:inst14|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|full_adder:inst14            ; full_adder                        ; work         ;
+;       |full_adder:inst15|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|full_adder:inst15            ; full_adder                        ; work         ;
+;       |full_adder:inst17|                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|full_adder:inst17            ; full_adder                        ; work         ;
+;       |full_adder:inst18|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|full_adder:inst18            ; full_adder                        ; work         ;
+;       |full_adder:inst19|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|full_adder:inst19            ; full_adder                        ; work         ;
+;       |ham_HA:inst16|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst16                ; ham_HA                            ; work         ;
+;       |ham_HA:inst20|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst20                ; ham_HA                            ; work         ;
+;       |ham_HA:inst21|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst21                ; ham_HA                            ; work         ;
+;       |ham_HA:inst22|                         ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst22                ; ham_HA                            ; work         ;
+;       |kim_BCD_decorder:indfsst|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|kim_BCD_decorder:indfsst     ; kim_BCD_decorder                  ; work         ;
+;       |pulse_generator:inst26|                ; 1 (1)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|kim_DialPad2Bin:inst27|pulse_generator:inst26       ; pulse_generator                   ; work         ;
 ;    |mod_10_counter_with_enable:in20|          ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|mod_10_counter_with_enable:in20                     ; mod_10_counter_with_enable        ; work         ;
 ;    |mod_10_counter_with_enable:in21|          ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|mod_10_counter_with_enable:in21                     ; mod_10_counter_with_enable        ; work         ;
 ;    |mod_24_counter_with_enable:inst1|         ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|mod_24_counter_with_enable:inst1                    ; mod_24_counter_with_enable        ; work         ;
@@ -255,13 +286,18 @@ https://fpgasoftware.intel.com/eula.
 ;       |ryu_FA:instfa3|                        ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ryu_subtractor:inst17|ryu_FA:instfa3                ; ryu_FA                            ; work         ;
 ;       |ryu_FA:instfa4|                        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ryu_subtractor:inst17|ryu_FA:instfa4                ; ryu_FA                            ; work         ;
 ;       |ryu_FA:instfa52|                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|ryu_subtractor:inst17|ryu_FA:instfa52               ; ryu_FA                            ; work         ;
+;    |seven_segment:inst10|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst10                                ; seven_segment                     ; work         ;
+;    |seven_segment:inst11|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst11                                ; seven_segment                     ; work         ;
 ;    |seven_segment:inst13|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst13                                ; seven_segment                     ; work         ;
 ;    |seven_segment:inst16213|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst16213                             ; seven_segment                     ; work         ;
-;    |seven_segment:inst16214|                  ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst16214                             ; seven_segment                     ; work         ;
-;    |seven_segment:inst2|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst2                                 ; seven_segment                     ; work         ;
-;    |seven_segment:inst3|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst3                                 ; seven_segment                     ; work         ;
-;    |seven_segment:inst7|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst7                                 ; seven_segment                     ; work         ;
+;    |seven_segment:inst16214|                  ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst16214                             ; seven_segment                     ; work         ;
+;    |seven_segment:inst1762162|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst1762162                           ; seven_segment                     ; work         ;
+;    |seven_segment:inst1762163|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst1762163                           ; seven_segment                     ; work         ;
+;    |seven_segment:inst2|                      ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst2                                 ; seven_segment                     ; work         ;
+;    |seven_segment:inst3|                      ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst3                                 ; seven_segment                     ; work         ;
+;    |seven_segment:inst7|                      ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst7                                 ; seven_segment                     ; work         ;
 ;    |seven_segment:inst8|                      ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst8                                 ; seven_segment                     ; work         ;
+;    |seven_segment:inst9|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |digital_clock|seven_segment:inst9                                 ; seven_segment                     ; work         ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -287,7 +323,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 23    ;
+; Total registers                              ; 41    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -302,19 +338,19 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 114                         ;
-; cycloneiii_ff         ; 23                          ;
-;     plain             ; 23                          ;
-; cycloneiii_lcell_comb ; 158                         ;
-;     normal            ; 158                         ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 53                          ;
-;         4 data inputs ; 91                          ;
+; boundary_port         ; 110                         ;
+; cycloneiii_ff         ; 41                          ;
+;     plain             ; 41                          ;
+; cycloneiii_lcell_comb ; 209                         ;
+;     normal            ; 209                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 62                          ;
+;         4 data inputs ; 123                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 4.71                        ;
+; Average LUT depth     ; 4.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -333,7 +369,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 01 20:53:58 2022
+    Info: Processing started: Thu Dec 01 23:50:23 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off digital_clock -c digital_clock
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -387,33 +423,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file test.bd
     Info (12023): Found entity 1: Test
 Info (12021): Found 1 design units, including 1 entities, in source file bin2timevalue.bdf
     Info (12023): Found entity 1: Bin2TimeValue
+Info (12021): Found 1 design units, including 1 entities, in source file kim/kim_bcd_decorder.bdf
+    Info (12023): Found entity 1: kim_BCD_decorder
+Info (12021): Found 1 design units, including 1 entities, in source file kim/kim_dialpad2bin.bdf
+    Info (12023): Found entity 1: kim_DialPad2Bin
 Info (12127): Elaborating entity "digital_clock" for the top level hierarchy
-Warning (275080): Converted elements in bus name "H" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "H[4]" to "H4"
-    Warning (275081): Converted element name(s) from "H[3]" to "H3"
-    Warning (275081): Converted element name(s) from "H[2]" to "H2"
-    Warning (275081): Converted element name(s) from "H[1]" to "H1"
-    Warning (275081): Converted element name(s) from "H[0]" to "H0"
-Info (12128): Elaborating entity "ham_TimeAdder" for hierarchy "ham_TimeAdder:inst16"
-Info (12128): Elaborating entity "ham_D_Latch" for hierarchy "ham_TimeAdder:inst16|ham_D_Latch:inst2"
-Info (12128): Elaborating entity "ham_HA" for hierarchy "ham_TimeAdder:inst16|ham_HA:inst9"
-Info (12128): Elaborating entity "ham_FA" for hierarchy "ham_TimeAdder:inst16|ham_FA:inst14"
-Info (12128): Elaborating entity "ham_Modulo24" for hierarchy "ham_TimeAdder:inst16|ham_Modulo24:inst"
-Info (12128): Elaborating entity "mod_24_counter_with_enable" for hierarchy "mod_24_counter_with_enable:inst1"
-Info (12128): Elaborating entity "mod_6_counter_with_enable" for hierarchy "mod_6_counter_with_enable:inst46"
-Warning (275008): Primitive "AND3" of instance "inst11" not used
-Info (12128): Elaborating entity "mod_10_counter_with_enable" for hierarchy "mod_10_counter_with_enable:in21"
-Warning (275008): Primitive "AND3" of instance "OE_And" not used
-Info (12128): Elaborating entity "pulse_generator" for hierarchy "pulse_generator:Insten"
-Info (12128): Elaborating entity "ryu_subtractor" for hierarchy "ryu_subtractor:inst17"
-Info (12128): Elaborating entity "ryu_21mux" for hierarchy "ryu_subtractor:inst17|ryu_21mux:inst13"
-Warning (275011): Block or symbol "NOT" of instance "muxnot" overlaps another block or symbol
-Info (12128): Elaborating entity "ryu_FA" for hierarchy "ryu_subtractor:inst17|ryu_FA:instfa"
-Info (12128): Elaborating entity "ryu_checker" for hierarchy "ryu_subtractor:inst17|ryu_checker:instnn1"
-Info (12128): Elaborating entity "Bin2TimeValue" for hierarchy "Bin2TimeValue:inst19"
-Warning (275008): Primitive "NOT" of instance "inst" not used
-Warning (275008): Primitive "NOT" of instance "inst12" not used
-Warning (275008): Primitive "NOT" of instance "inst13" not used
 Info (12128): Elaborating entity "seven_segment" for hierarchy "seven_segment:inst16213"
 Info (12128): Elaborating entity "hoon_segment_decorder_to_2_digits" for hierarchy "hoon_segment_decorder_to_2_digits:inst12"
 Warning (275011): Block or symbol "AND3" of instance "inst8" overlaps another block or symbol
@@ -425,31 +439,49 @@ Warning (275011): Block or symbol "AND3" of instance "inst20" overlaps another b
 Warning (275011): Block or symbol "AND3" of instance "inst23" overlaps another block or symbol
 Warning (275011): Block or symbol "AND4" of instance "inst25" overlaps another block or symbol
 Warning (275011): Block or symbol "AND4" of instance "inst27" overlaps another block or symbol
+Info (12128): Elaborating entity "mod_24_counter_with_enable" for hierarchy "mod_24_counter_with_enable:inst1"
+Info (12128): Elaborating entity "mod_6_counter_with_enable" for hierarchy "mod_6_counter_with_enable:inst46"
+Warning (275008): Primitive "AND3" of instance "inst11" not used
+Info (12128): Elaborating entity "mod_10_counter_with_enable" for hierarchy "mod_10_counter_with_enable:in21"
+Warning (275008): Primitive "AND3" of instance "OE_And" not used
+Info (12128): Elaborating entity "pulse_generator" for hierarchy "pulse_generator:Insten"
+Info (12128): Elaborating entity "ham_TimeAdder" for hierarchy "ham_TimeAdder:inst16"
+Info (12128): Elaborating entity "ham_D_Latch" for hierarchy "ham_TimeAdder:inst16|ham_D_Latch:inst2"
+Info (12128): Elaborating entity "ham_HA" for hierarchy "ham_TimeAdder:inst16|ham_HA:inst9"
+Info (12128): Elaborating entity "ham_FA" for hierarchy "ham_TimeAdder:inst16|ham_FA:inst14"
+Info (12128): Elaborating entity "ham_Modulo24" for hierarchy "ham_TimeAdder:inst16|ham_Modulo24:inst"
+Info (12128): Elaborating entity "ryu_subtractor" for hierarchy "ryu_subtractor:inst17"
+Info (12128): Elaborating entity "ryu_21mux" for hierarchy "ryu_subtractor:inst17|ryu_21mux:inst13"
+Warning (275011): Block or symbol "NOT" of instance "muxnot" overlaps another block or symbol
+Info (12128): Elaborating entity "ryu_FA" for hierarchy "ryu_subtractor:inst17|ryu_FA:instfa"
+Info (12128): Elaborating entity "ryu_checker" for hierarchy "ryu_subtractor:inst17|ryu_checker:instnn1"
+Info (12128): Elaborating entity "Bin2TimeValue" for hierarchy "Bin2TimeValue:inst19"
+Warning (275008): Primitive "NOT" of instance "inst" not used
+Warning (275008): Primitive "NOT" of instance "inst12" not used
+Warning (275008): Primitive "NOT" of instance "inst13" not used
+Info (12128): Elaborating entity "kim_DialPad2Bin" for hierarchy "kim_DialPad2Bin:inst27"
+Warning (275011): Block or symbol "full_adder" of instance "inst14" overlaps another block or symbol
+Warning (275011): Block or symbol "ham_HA" of instance "inst16" overlaps another block or symbol
+Warning (275011): Block or symbol "full_adder" of instance "infdsst19" overlaps another block or symbol
+Warning (275011): Block or symbol "full_adder" of instance "insdafdfsst16" overlaps another block or symbol
+Warning (275002): No superset bus at connection
+Info (12128): Elaborating entity "full_adder" for hierarchy "kim_DialPad2Bin:inst27|full_adder:infdsst19"
+Info (12128): Elaborating entity "kim_BCD_decorder" for hierarchy "kim_DialPad2Bin:inst27|kim_BCD_decorder:indfsst"
+Warning (275009): Pin "I0" not connected
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "My_H1[6]" is stuck at GND
     Warning (13410): Pin "My_H1[2]" is stuck at VCC
-    Warning (13410): Pin "My_H1[1]" is stuck at VCC
-    Warning (13410): Pin "Your_H1[6]" is stuck at GND
     Warning (13410): Pin "Your_H1[2]" is stuck at VCC
-    Warning (13410): Pin "Your_H1[1]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "YourCode[9]"
-    Warning (15610): No output dependent on input pin "YourCode[8]"
-    Warning (15610): No output dependent on input pin "YourCode[7]"
-    Warning (15610): No output dependent on input pin "MyCode[9]"
-    Warning (15610): No output dependent on input pin "MyCode[8]"
-    Warning (15610): No output dependent on input pin "MyCode[7]"
-Info (21057): Implemented 271 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 25 input pins
-    Info (21059): Implemented 89 output pins
-    Info (21061): Implemented 157 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Thu Dec 01 20:54:08 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+Info (21057): Implemented 322 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 26 input pins
+    Info (21059): Implemented 84 output pins
+    Info (21061): Implemented 212 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Thu Dec 01 23:50:34 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:21
 
 

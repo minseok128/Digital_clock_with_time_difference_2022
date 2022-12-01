@@ -1,42 +1,4 @@
 |digital_clock
-H4 <= ham_TimeAdder:inst16.H4
-CLK => mod_24_counter_with_enable:inst1.CLK
-CLK => mod_6_counter_with_enable:inst46.CLK
-CLK => mod_10_counter_with_enable:in21.CLK
-CLK => mod_6_counter_with_enable:inst45.CLK
-CLK => mod_10_counter_with_enable:in20.CLK
-CLK => pulse_generator:Insten.CLK
-CLK => pulse_generator:inst23.CLK
-Mode => mod_10_counter_with_enable:in20.IE
-Mode => inst.IN2
-Mode => inst22.IN0
-Add_1M_Switch => pulse_generator:Insten.SWITCH
-Add_1H_Switch => pulse_generator:inst23.SWITCH
-YourCode[0] => Bin2TimeValue:inst19.I[0]
-YourCode[1] => Bin2TimeValue:inst19.I[1]
-YourCode[2] => Bin2TimeValue:inst19.I[2]
-YourCode[3] => Bin2TimeValue:inst19.I[3]
-YourCode[4] => Bin2TimeValue:inst19.I[4]
-YourCode[5] => Bin2TimeValue:inst19.I[5]
-YourCode[6] => Bin2TimeValue:inst19.I[6]
-YourCode[7] => Bin2TimeValue:inst19.I[7]
-YourCode[8] => Bin2TimeValue:inst19.I[8]
-YourCode[9] => Bin2TimeValue:inst19.I[9]
-MyCode[0] => Bin2TimeValue:inst18.I[0]
-MyCode[1] => Bin2TimeValue:inst18.I[1]
-MyCode[2] => Bin2TimeValue:inst18.I[2]
-MyCode[3] => Bin2TimeValue:inst18.I[3]
-MyCode[4] => Bin2TimeValue:inst18.I[4]
-MyCode[5] => Bin2TimeValue:inst18.I[5]
-MyCode[6] => Bin2TimeValue:inst18.I[6]
-MyCode[7] => Bin2TimeValue:inst18.I[7]
-MyCode[8] => Bin2TimeValue:inst18.I[8]
-MyCode[9] => Bin2TimeValue:inst18.I[9]
-S => ham_TimeAdder:inst16.S
-H3 <= ham_TimeAdder:inst16.H3
-H2 <= ham_TimeAdder:inst16.H2
-H1 <= ham_TimeAdder:inst16.H1
-H0 <= ham_TimeAdder:inst16.H0
 My_H0[0] <= seven_segment:inst16213.O[0]
 My_H0[1] <= seven_segment:inst16213.O[1]
 My_H0[2] <= seven_segment:inst16213.O[2]
@@ -44,6 +6,37 @@ My_H0[3] <= seven_segment:inst16213.O[3]
 My_H0[4] <= seven_segment:inst16213.O[4]
 My_H0[5] <= seven_segment:inst16213.O[5]
 My_H0[6] <= seven_segment:inst16213.O[6]
+CLK => mod_24_counter_with_enable:inst1.CLK
+CLK => mod_6_counter_with_enable:inst46.CLK
+CLK => mod_10_counter_with_enable:in21.CLK
+CLK => mod_6_counter_with_enable:inst45.CLK
+CLK => mod_10_counter_with_enable:in20.CLK
+CLK => pulse_generator:Insten.CLK
+CLK => pulse_generator:inst23.CLK
+CLK => kim_DialPad2Bin:inst27.CLK
+CLK => kim_DialPad2Bin:inst26.CLK
+Zero => mod_24_counter_with_enable:inst1.Zero
+Zero => hoon_segment_decorder_to_2_digits:inst12.Zero
+Zero => seven_segment:inst1762162.ID
+Zero => seven_segment:inst1762162.IC
+Zero => seven_segment:inst1762162.IB
+Zero => seven_segment:inst8.ID
+Zero => seven_segment:inst3.ID
+Zero => ham_TimeAdder:inst16.A5
+Zero => inst29.IN0
+Zero => kim_DialPad2Bin:inst27.zero
+Zero => kim_DialPad2Bin:inst26.zero
+Zero => hoon_segment_decorder_to_2_digits:inst15.Zero
+Zero => seven_segment:inst1762163.ID
+Zero => seven_segment:inst1762163.IC
+Zero => seven_segment:inst1762163.IB
+Zero => seven_segment:inst13.ID
+Zero => seven_segment:inst10.ID
+Mode => mod_10_counter_with_enable:in20.IE
+Mode => inst.IN2
+Mode => inst22.IN0
+Add_1M_Switch => pulse_generator:Insten.SWITCH
+Add_1H_Switch => pulse_generator:inst23.SWITCH
 My_H1[0] <= seven_segment:inst1762162.O[0]
 My_H1[1] <= seven_segment:inst1762162.O[1]
 My_H1[2] <= seven_segment:inst1762162.O[2]
@@ -86,6 +79,27 @@ Your_H0[3] <= seven_segment:inst16214.O[3]
 Your_H0[4] <= seven_segment:inst16214.O[4]
 Your_H0[5] <= seven_segment:inst16214.O[5]
 Your_H0[6] <= seven_segment:inst16214.O[6]
+U_Dial_9 => kim_DialPad2Bin:inst27.I9
+U_Dial_8 => kim_DialPad2Bin:inst27.I8
+U_Dial_7 => kim_DialPad2Bin:inst27.I7
+U_Dial_6 => kim_DialPad2Bin:inst27.I6
+U_Dial_5 => kim_DialPad2Bin:inst27.I5
+U_Dial_4 => kim_DialPad2Bin:inst27.I4
+U_Dial_3 => kim_DialPad2Bin:inst27.I3
+U_Dial_2 => kim_DialPad2Bin:inst27.I2
+U_Dial_1 => kim_DialPad2Bin:inst27.I1
+U_Dial_0 => kim_DialPad2Bin:inst27.I0
+MyDial_9 => kim_DialPad2Bin:inst26.I9
+MyDial_8 => kim_DialPad2Bin:inst26.I8
+MyDial_7 => kim_DialPad2Bin:inst26.I7
+MyDial_6 => kim_DialPad2Bin:inst26.I6
+MyDial_5 => kim_DialPad2Bin:inst26.I5
+MyDial_4 => kim_DialPad2Bin:inst26.I4
+MyDial_3 => kim_DialPad2Bin:inst26.I3
+MyDial_2 => kim_DialPad2Bin:inst26.I2
+MyDial_1 => kim_DialPad2Bin:inst26.I1
+MyDial_0 => kim_DialPad2Bin:inst26.I0
+Send => ham_TimeAdder:inst16.S
 Your_H1[0] <= seven_segment:inst1762163.O[0]
 Your_H1[1] <= seven_segment:inst1762163.O[1]
 Your_H1[2] <= seven_segment:inst1762163.O[2]
@@ -123,156 +137,84 @@ Your_S1[5] <= seven_segment:inst10.O[5]
 Your_S1[6] <= seven_segment:inst10.O[6]
 
 
-|digital_clock|ham_TimeAdder:inst16
-H0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-D5 => ham_D_Latch:inst2.D5
-D4 => ham_D_Latch:inst2.D4
-D3 => ham_D_Latch:inst2.D3
-D2 => ham_D_Latch:inst2.D2
-D1 => ham_D_Latch:inst2.D1
-D0 => ham_D_Latch:inst2.D0
-S => ham_D_Latch:inst2.C
-A0 => ham_HA:inst9.A
-H1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-A1 => ham_FA:inst14.A
-H2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A2 => ham_FA:inst13.A
-H3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-A5 => ham_FA:inst10.A
-A4 => ham_FA:inst11.A
-A3 => ham_FA:inst12.A
-H4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+|digital_clock|seven_segment:inst16213
+O[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+O[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+O[2] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+O[3] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+O[4] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+O[5] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+O[6] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+IC => inst.IN0
+IC => inst8.IN0
+IC => inst24.IN0
+IC => inst18.IN2
+IC => inst40.IN0
+IA => inst.IN1
+IA => inst12.IN0
+IA => inst25.IN0
+IA => inst15.IN1
+IA => inst18.IN1
+ID => inst14.IN1
+ID => inst19.IN2
+ID => inst27.IN2
+ID => inst28.IN1
+IB => inst14.IN2
+IB => inst10.IN0
+IB => inst23.IN1
+IB => inst22.IN0
+IB => inst15.IN0
 
 
-|digital_clock|ham_TimeAdder:inst16|ham_D_Latch:inst2
-Q0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-D0 => inst4.IN0
-D0 => inst.IN1
-C => inst1.IN1
-C => inst.IN0
-C => inst6.IN1
-C => inst5.IN0
-C => inst11.IN1
-C => inst10.IN0
-C => inst16.IN1
-C => inst15.IN0
-C => inst21.IN1
-C => inst20.IN0
-C => inst26.IN1
-C => inst25.IN0
-Q1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-D1 => inst9.IN0
-D1 => inst5.IN1
-Q2 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-D2 => inst14.IN0
-D2 => inst10.IN1
-Q3 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-D3 => inst19.IN0
-D3 => inst15.IN1
-Q4 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
-D4 => inst24.IN0
-D4 => inst20.IN1
-Q5 <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-D5 => inst29.IN0
-D5 => inst25.IN1
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_HA:inst9
-S <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst2.IN1
-B => inst.IN1
-B => inst2.IN0
-C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_FA:inst14
-C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst3.IN0
-A => inst.IN0
-B => inst3.IN1
-B => inst.IN1
-_C => inst5.IN1
-_C => inst4.IN1
-S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_FA:inst13
-C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst3.IN0
-A => inst.IN0
-B => inst3.IN1
-B => inst.IN1
-_C => inst5.IN1
-_C => inst4.IN1
-S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_Modulo24:inst
-R0 <= ham_HA:inst.S
-I0 => ham_HA:inst.A
-I0 => inst1.IN0
-I2 => inst14.IN0
-I1 => inst1.IN1
-I1 => ham_FA:inst3.A
-M => inst12.IN0
-M => inst5.IN0
-M => inst6.IN1
-M => inst15.IN1
-R1 <= ham_FA:inst3.S
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_Modulo24:inst|ham_HA:inst
-S <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst2.IN1
-B => inst.IN1
-B => inst2.IN0
-C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_Modulo24:inst|ham_FA:inst3
-C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst3.IN0
-A => inst.IN0
-B => inst3.IN1
-B => inst.IN1
-_C => inst5.IN1
-_C => inst4.IN1
-S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_FA:inst10
-C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst3.IN0
-A => inst.IN0
-B => inst3.IN1
-B => inst.IN1
-_C => inst5.IN1
-_C => inst4.IN1
-S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_FA:inst11
-C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst3.IN0
-A => inst.IN0
-B => inst3.IN1
-B => inst.IN1
-_C => inst5.IN1
-_C => inst4.IN1
-S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ham_TimeAdder:inst16|ham_FA:inst12
-C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-A => inst3.IN0
-A => inst.IN0
-B => inst3.IN1
-B => inst.IN1
-_C => inst5.IN1
-_C => inst4.IN1
-S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+|digital_clock|hoon_segment_decorder_to_2_digits:inst12
+OA <= IA.DB_MAX_OUTPUT_PORT_TYPE
+IA => OA.DATAIN
+OB <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+IE => inst27.IN0
+IE => inst.IN0
+IE => inst26.IN0
+IE => inst7.IN0
+IE => inst6.IN0
+IE => inst14.IN0
+IE => inst16.IN0
+IE => inst17.IN0
+IE => inst20.IN0
+IE => inst21.IN0
+ID => inst27.IN1
+ID => inst2.IN0
+ID => inst25.IN1
+ID => inst7.IN1
+ID => inst8.IN1
+ID => inst15.IN0
+ID => inst13.IN1
+ID => inst17.IN1
+ID => inst9.IN1
+ID => inst21.IN1
+IC => inst3.IN0
+IC => inst25.IN2
+IC => inst24.IN1
+IC => inst6.IN1
+IC => inst15.IN1
+IC => inst13.IN2
+IC => inst17.IN2
+IC => inst18.IN2
+IC => inst19.IN1
+IB => inst27.IN3
+IB => inst23.IN2
+IB => inst4.IN0
+IB => inst24.IN2
+IB => inst8.IN2
+IB => inst15.IN2
+IB => inst16.IN3
+IB => inst19.IN2
+OH <= Zero.DB_MAX_OUTPUT_PORT_TYPE
+Zero => OH.DATAIN
+Zero => OG.DATAIN
+OG <= Zero.DB_MAX_OUTPUT_PORT_TYPE
+OF <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+OE <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OD <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+OC <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |digital_clock|mod_24_counter_with_enable:inst1
@@ -374,338 +316,6 @@ IE => inst6.IN0
 CLK => inst.CLK
 CLK => inst1.CLK
 SWITCH => inst.DATAIN
-
-
-|digital_clock|ryu_subtractor:inst17
-sub_S0 <= ryu_21mux:inst13.Y
-sub_a0 => ryu_FA:instfa.A
-sub_a0 => ryu_checker:instnn.C0
-sub_b0 => sub_xor1.IN0
-sub_b0 => ryu_checker:instnn1.C0
-sub_b1 => ryu_checker:instnn1.C1
-sub_b1 => sub_xor2.IN0
-sub_b2 => ryu_checker:instnn1.C2
-sub_b2 => sub_xor3.IN0
-sub_b3 => ryu_checker:instnn1.C3
-sub_b3 => sub_xor4.IN0
-sub_b4 => ryu_checker:instnn1.C4
-sub_b4 => sub_xor5.IN0
-sub_a1 => ryu_checker:instnn.C1
-sub_a1 => ryu_FA:instfa2.A
-sub_a2 => ryu_checker:instnn.C2
-sub_a2 => ryu_FA:instfa3.A
-sub_a3 => ryu_checker:instnn.C3
-sub_a3 => ryu_FA:instfa4.A
-sub_a4 => ryu_checker:instnn.C4
-sub_a4 => ryu_FA:instfa52.A
-sub_a4 => ryu_FA:instfa12.A
-sub_S1 <= ryu_21mux:inst2011.Y
-sub_S2 <= ryu_21mux:inst8.Y
-sub_S3 <= ryu_21mux:inst9.Y
-sub_S4 <= ryu_21mux:inst10.Y
-sub_S5 <= ryu_21mux:inst12.Y
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst13
-Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
-S => muxand1.IN0
-S => muxnot.IN0
-B => muxand1.IN1
-A => muxand0.IN1
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst2.IN1
-B => inst.IN1
-B => inst2.IN0
-C => inst1.IN1
-C => inst3.IN1
-Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_checker:instnn1
-COut <= checkerand3.DB_MAX_OUTPUT_PORT_TYPE
-C0 => checkernot0.IN0
-C1 => checkernot1.IN0
-C2 => checkernot2.IN0
-C3 => checkernot3.IN0
-C4 => checkerand3.IN1
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_checker:instnn
-COut <= checkerand3.DB_MAX_OUTPUT_PORT_TYPE
-C0 => checkernot0.IN0
-C1 => checkernot1.IN0
-C2 => checkernot2.IN0
-C3 => checkernot3.IN0
-C4 => checkerand3.IN1
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst2011
-Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
-S => muxand1.IN0
-S => muxnot.IN0
-B => muxand1.IN1
-A => muxand0.IN1
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa2
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst2.IN1
-B => inst.IN1
-B => inst2.IN0
-C => inst1.IN1
-C => inst3.IN1
-Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst8
-Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
-S => muxand1.IN0
-S => muxnot.IN0
-B => muxand1.IN1
-A => muxand0.IN1
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa3
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst2.IN1
-B => inst.IN1
-B => inst2.IN0
-C => inst1.IN1
-C => inst3.IN1
-Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst9
-Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
-S => muxand1.IN0
-S => muxnot.IN0
-B => muxand1.IN1
-A => muxand0.IN1
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa4
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst2.IN1
-B => inst.IN1
-B => inst2.IN0
-C => inst1.IN1
-C => inst3.IN1
-Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst10
-Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
-S => muxand1.IN0
-S => muxnot.IN0
-B => muxand1.IN1
-A => muxand0.IN1
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa52
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst2.IN1
-B => inst.IN1
-B => inst2.IN0
-C => inst1.IN1
-C => inst3.IN1
-Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst12
-Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
-S => muxand1.IN0
-S => muxnot.IN0
-B => muxand1.IN1
-A => muxand0.IN1
-
-
-|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa12
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst2.IN1
-B => inst.IN1
-B => inst2.IN0
-C => inst1.IN1
-C => inst3.IN1
-Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|digital_clock|Bin2TimeValue:inst19
-O[0] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
-O[1] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
-O[2] <= inst39.DB_MAX_OUTPUT_PORT_TYPE
-O[3] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
-O[4] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
-I[0] => inst26435.IN1
-I[0] => inst20.IN0
-I[0] => inst38.IN2
-I[0] => inst43.IN3
-I[1] => inst27111.IN1
-I[1] => inst19.IN0
-I[1] => inst35.IN3
-I[1] => inst38.IN1
-I[1] => inst29.IN2
-I[1] => inst41.IN2
-I[2] => inst18.IN0
-I[2] => inst35.IN2
-I[2] => inst30.IN1
-I[2] => inst43.IN2
-I[2] => inst41.IN1
-I[3] => inst32.IN0
-I[3] => inst31.IN2
-I[3] => inst17.IN0
-I[4] => inst16.IN0
-I[4] => inst35.IN1
-I[4] => inst31.IN1
-I[4] => inst44.IN1
-I[4] => inst43.IN1
-I[4] => inst49.IN1
-I[5] => inst27111.IN0
-I[5] => inst15.IN0
-I[5] => inst31.IN0
-I[5] => inst42.IN1
-I[5] => inst49.IN0
-I[6] => inst2832.IN0
-I[6] => inst22.IN0
-I[6] => inst14.IN0
-I[6] => inst37.IN0
-I[6] => inst38.IN0
-I[7] => ~NO_FANOUT~
-I[8] => ~NO_FANOUT~
-I[9] => ~NO_FANOUT~
-
-
-|digital_clock|Bin2TimeValue:inst18
-O[0] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
-O[1] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
-O[2] <= inst39.DB_MAX_OUTPUT_PORT_TYPE
-O[3] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
-O[4] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
-I[0] => inst26435.IN1
-I[0] => inst20.IN0
-I[0] => inst38.IN2
-I[0] => inst43.IN3
-I[1] => inst27111.IN1
-I[1] => inst19.IN0
-I[1] => inst35.IN3
-I[1] => inst38.IN1
-I[1] => inst29.IN2
-I[1] => inst41.IN2
-I[2] => inst18.IN0
-I[2] => inst35.IN2
-I[2] => inst30.IN1
-I[2] => inst43.IN2
-I[2] => inst41.IN1
-I[3] => inst32.IN0
-I[3] => inst31.IN2
-I[3] => inst17.IN0
-I[4] => inst16.IN0
-I[4] => inst35.IN1
-I[4] => inst31.IN1
-I[4] => inst44.IN1
-I[4] => inst43.IN1
-I[4] => inst49.IN1
-I[5] => inst27111.IN0
-I[5] => inst15.IN0
-I[5] => inst31.IN0
-I[5] => inst42.IN1
-I[5] => inst49.IN0
-I[6] => inst2832.IN0
-I[6] => inst22.IN0
-I[6] => inst14.IN0
-I[6] => inst37.IN0
-I[6] => inst38.IN0
-I[7] => ~NO_FANOUT~
-I[8] => ~NO_FANOUT~
-I[9] => ~NO_FANOUT~
-
-
-|digital_clock|seven_segment:inst16213
-O[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-O[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-O[2] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
-O[3] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
-O[4] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
-O[5] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-O[6] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-IC => inst.IN0
-IC => inst8.IN0
-IC => inst24.IN0
-IC => inst18.IN2
-IC => inst40.IN0
-IA => inst.IN1
-IA => inst12.IN0
-IA => inst25.IN0
-IA => inst15.IN1
-IA => inst18.IN1
-ID => inst14.IN1
-ID => inst19.IN2
-ID => inst27.IN2
-ID => inst28.IN1
-IB => inst14.IN2
-IB => inst10.IN0
-IB => inst23.IN1
-IB => inst22.IN0
-IB => inst15.IN0
-
-
-|digital_clock|hoon_segment_decorder_to_2_digits:inst12
-OA <= IA.DB_MAX_OUTPUT_PORT_TYPE
-IA => OA.DATAIN
-OB <= inst29.DB_MAX_OUTPUT_PORT_TYPE
-IE => inst27.IN0
-IE => inst.IN0
-IE => inst26.IN0
-IE => inst7.IN0
-IE => inst6.IN0
-IE => inst14.IN0
-IE => inst16.IN0
-IE => inst17.IN0
-IE => inst20.IN0
-IE => inst21.IN0
-ID => inst27.IN1
-ID => inst2.IN0
-ID => inst25.IN1
-ID => inst7.IN1
-ID => inst8.IN1
-ID => inst15.IN0
-ID => inst13.IN1
-ID => inst17.IN1
-ID => inst9.IN1
-ID => inst21.IN1
-IC => inst3.IN0
-IC => inst25.IN2
-IC => inst24.IN1
-IC => inst6.IN1
-IC => inst15.IN1
-IC => inst13.IN2
-IC => inst17.IN2
-IC => inst18.IN2
-IC => inst19.IN1
-IB => inst27.IN3
-IB => inst23.IN2
-IB => inst4.IN0
-IB => inst24.IN2
-IB => inst8.IN2
-IB => inst15.IN2
-IB => inst16.IN3
-IB => inst19.IN2
-OH <= Zero.DB_MAX_OUTPUT_PORT_TYPE
-Zero => OH.DATAIN
-Zero => OG.DATAIN
-OG <= Zero.DB_MAX_OUTPUT_PORT_TYPE
-OF <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-OE <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-OD <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-OC <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |digital_clock|seven_segment:inst1762162
@@ -931,6 +541,894 @@ OF <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 OE <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 OD <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 OC <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16
+H0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+D5 => ham_D_Latch:inst2.D5
+D4 => ham_D_Latch:inst2.D4
+D3 => ham_D_Latch:inst2.D3
+D2 => ham_D_Latch:inst2.D2
+D1 => ham_D_Latch:inst2.D1
+D0 => ham_D_Latch:inst2.D0
+S => ham_D_Latch:inst2.C
+A0 => ham_HA:inst9.A
+H1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A1 => ham_FA:inst14.A
+H2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => ham_FA:inst13.A
+H3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A5 => ham_FA:inst10.A
+A4 => ham_FA:inst11.A
+A3 => ham_FA:inst12.A
+H4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_D_Latch:inst2
+Q0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst4.IN0
+D0 => inst.IN1
+C => inst1.IN1
+C => inst.IN0
+C => inst6.IN1
+C => inst5.IN0
+C => inst11.IN1
+C => inst10.IN0
+C => inst16.IN1
+C => inst15.IN0
+C => inst21.IN1
+C => inst20.IN0
+C => inst26.IN1
+C => inst25.IN0
+Q1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst9.IN0
+D1 => inst5.IN1
+Q2 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst14.IN0
+D2 => inst10.IN1
+Q3 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst19.IN0
+D3 => inst15.IN1
+Q4 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+D4 => inst24.IN0
+D4 => inst20.IN1
+Q5 <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+D5 => inst29.IN0
+D5 => inst25.IN1
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_HA:inst9
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_FA:inst14
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst.IN1
+_C => inst5.IN1
+_C => inst4.IN1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_FA:inst13
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst.IN1
+_C => inst5.IN1
+_C => inst4.IN1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_Modulo24:inst
+R0 <= ham_HA:inst.S
+I0 => ham_HA:inst.A
+I0 => inst1.IN0
+I2 => inst14.IN0
+I1 => inst1.IN1
+I1 => ham_FA:inst3.A
+M => inst12.IN0
+M => inst5.IN0
+M => inst6.IN1
+M => inst15.IN1
+R1 <= ham_FA:inst3.S
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_Modulo24:inst|ham_HA:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_Modulo24:inst|ham_FA:inst3
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst.IN1
+_C => inst5.IN1
+_C => inst4.IN1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_FA:inst10
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst.IN1
+_C => inst5.IN1
+_C => inst4.IN1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_FA:inst11
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst.IN1
+_C => inst5.IN1
+_C => inst4.IN1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ham_TimeAdder:inst16|ham_FA:inst12
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst.IN1
+_C => inst5.IN1
+_C => inst4.IN1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ryu_subtractor:inst17
+sub_S0 <= ryu_21mux:inst13.Y
+sub_a0 => ryu_FA:instfa.A
+sub_a0 => ryu_checker:instnn.C0
+sub_b0 => sub_xor1.IN0
+sub_b0 => ryu_checker:instnn1.C0
+sub_b1 => ryu_checker:instnn1.C1
+sub_b1 => sub_xor2.IN0
+sub_b2 => ryu_checker:instnn1.C2
+sub_b2 => sub_xor3.IN0
+sub_b3 => ryu_checker:instnn1.C3
+sub_b3 => sub_xor4.IN0
+sub_b4 => ryu_checker:instnn1.C4
+sub_b4 => sub_xor5.IN0
+sub_a1 => ryu_checker:instnn.C1
+sub_a1 => ryu_FA:instfa2.A
+sub_a2 => ryu_checker:instnn.C2
+sub_a2 => ryu_FA:instfa3.A
+sub_a3 => ryu_checker:instnn.C3
+sub_a3 => ryu_FA:instfa4.A
+sub_a4 => ryu_checker:instnn.C4
+sub_a4 => ryu_FA:instfa52.A
+sub_a4 => ryu_FA:instfa12.A
+sub_S1 <= ryu_21mux:inst2011.Y
+sub_S2 <= ryu_21mux:inst8.Y
+sub_S3 <= ryu_21mux:inst9.Y
+sub_S4 <= ryu_21mux:inst10.Y
+sub_S5 <= ryu_21mux:inst12.Y
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst13
+Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
+S => muxand1.IN0
+S => muxnot.IN0
+B => muxand1.IN1
+A => muxand0.IN1
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_checker:instnn1
+COut <= checkerand3.DB_MAX_OUTPUT_PORT_TYPE
+C0 => checkernot0.IN0
+C1 => checkernot1.IN0
+C2 => checkernot2.IN0
+C3 => checkernot3.IN0
+C4 => checkerand3.IN1
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_checker:instnn
+COut <= checkerand3.DB_MAX_OUTPUT_PORT_TYPE
+C0 => checkernot0.IN0
+C1 => checkernot1.IN0
+C2 => checkernot2.IN0
+C3 => checkernot3.IN0
+C4 => checkerand3.IN1
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst2011
+Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
+S => muxand1.IN0
+S => muxnot.IN0
+B => muxand1.IN1
+A => muxand0.IN1
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst8
+Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
+S => muxand1.IN0
+S => muxnot.IN0
+B => muxand1.IN1
+A => muxand0.IN1
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst9
+Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
+S => muxand1.IN0
+S => muxnot.IN0
+B => muxand1.IN1
+A => muxand0.IN1
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst10
+Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
+S => muxand1.IN0
+S => muxnot.IN0
+B => muxand1.IN1
+A => muxand0.IN1
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa52
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_21mux:inst12
+Y <= muxor.DB_MAX_OUTPUT_PORT_TYPE
+S => muxand1.IN0
+S => muxnot.IN0
+B => muxand1.IN1
+A => muxand0.IN1
+
+
+|digital_clock|ryu_subtractor:inst17|ryu_FA:instfa12
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+Ci <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|Bin2TimeValue:inst19
+O[0] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+O[1] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+O[2] <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+O[3] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+O[4] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+I[0] => inst26435.IN1
+I[0] => inst20.IN0
+I[0] => inst38.IN2
+I[0] => inst43.IN3
+I[1] => inst27111.IN1
+I[1] => inst19.IN0
+I[1] => inst35.IN3
+I[1] => inst38.IN1
+I[1] => inst29.IN2
+I[1] => inst41.IN2
+I[2] => inst18.IN0
+I[2] => inst35.IN2
+I[2] => inst30.IN1
+I[2] => inst43.IN2
+I[2] => inst41.IN1
+I[3] => inst32.IN0
+I[3] => inst31.IN2
+I[3] => inst17.IN0
+I[4] => inst16.IN0
+I[4] => inst35.IN1
+I[4] => inst31.IN1
+I[4] => inst44.IN1
+I[4] => inst43.IN1
+I[4] => inst49.IN1
+I[5] => inst27111.IN0
+I[5] => inst15.IN0
+I[5] => inst31.IN0
+I[5] => inst42.IN1
+I[5] => inst49.IN0
+I[6] => inst2832.IN0
+I[6] => inst22.IN0
+I[6] => inst14.IN0
+I[6] => inst37.IN0
+I[6] => inst38.IN0
+I[7] => ~NO_FANOUT~
+I[8] => ~NO_FANOUT~
+I[9] => ~NO_FANOUT~
+
+
+|digital_clock|kim_DialPad2Bin:inst27
+OUT[0] <= D0.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= D1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= D2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= D3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= D4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= D5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= D6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= D7.DB_MAX_OUTPUT_PORT_TYPE
+OUT[8] <= D8.DB_MAX_OUTPUT_PORT_TYPE
+OUT[9] <= D9.DB_MAX_OUTPUT_PORT_TYPE
+IE => pulse_generator:inst26.IE
+I2 => inst28.IN0
+I2 => kim_BCD_decorder:indfsst.I2
+I4 => inst28.IN1
+I4 => kim_BCD_decorder:indfsst.I4
+I3 => inst28.IN2
+I3 => kim_BCD_decorder:indfsst.I3
+I5 => inst28.IN3
+I5 => kim_BCD_decorder:indfsst.I5
+I7 => inst28.IN4
+I7 => kim_BCD_decorder:indfsst.I7
+I6 => inst28.IN5
+I6 => kim_BCD_decorder:indfsst.I6
+I8 => inst28.IN6
+I8 => kim_BCD_decorder:indfsst.I8
+I9 => inst28.IN7
+I9 => kim_BCD_decorder:indfsst.I9
+I1 => inst29.IN0
+I1 => kim_BCD_decorder:indfsst.I1
+I0 => inst29.IN1
+I0 => kim_BCD_decorder:indfsst.I0
+CLK => pulse_generator:inst26.CLK
+zero => full_adder:inassfaafst.IC
+zero => full_adder:inst17.IC
+zero => ham_HA:inst16.B
+
+
+|digital_clock|kim_DialPad2Bin:inst27|pulse_generator:inst26
+P <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+IE => inst6.IN0
+CLK => inst.CLK
+CLK => inst1.CLK
+SWITCH => inst.DATAIN
+
+
+|digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst25
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:infdsst19
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:inst1dssddsd8
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:insdsfdft17
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:insdafdfsst16
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:inst15
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:inst14
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:inassfaafst
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst24
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst23
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst22
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst21
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst20
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:inst19
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:inst18
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|full_adder:inst17
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst27|kim_BCD_decorder:indfsst
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I9 => inst2.IN0
+I9 => inst5.IN0
+I8 => inst2.IN1
+O2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I4 => inst3.IN0
+I6 => inst3.IN1
+I6 => inst4.IN1
+I7 => inst3.IN2
+I7 => inst5.IN1
+I7 => inst4.IN2
+I5 => inst3.IN3
+I5 => inst1.IN1
+O0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+I3 => inst1.IN0
+I3 => inst4.IN3
+I1 => inst1.IN2
+O1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+I2 => inst4.IN0
+I0 => ~NO_FANOUT~
+
+
+|digital_clock|kim_DialPad2Bin:inst27|ham_HA:inst16
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|Bin2TimeValue:inst18
+O[0] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+O[1] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+O[2] <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+O[3] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+O[4] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+I[0] => inst26435.IN1
+I[0] => inst20.IN0
+I[0] => inst38.IN2
+I[0] => inst43.IN3
+I[1] => inst27111.IN1
+I[1] => inst19.IN0
+I[1] => inst35.IN3
+I[1] => inst38.IN1
+I[1] => inst29.IN2
+I[1] => inst41.IN2
+I[2] => inst18.IN0
+I[2] => inst35.IN2
+I[2] => inst30.IN1
+I[2] => inst43.IN2
+I[2] => inst41.IN1
+I[3] => inst32.IN0
+I[3] => inst31.IN2
+I[3] => inst17.IN0
+I[4] => inst16.IN0
+I[4] => inst35.IN1
+I[4] => inst31.IN1
+I[4] => inst44.IN1
+I[4] => inst43.IN1
+I[4] => inst49.IN1
+I[5] => inst27111.IN0
+I[5] => inst15.IN0
+I[5] => inst31.IN0
+I[5] => inst42.IN1
+I[5] => inst49.IN0
+I[6] => inst2832.IN0
+I[6] => inst22.IN0
+I[6] => inst14.IN0
+I[6] => inst37.IN0
+I[6] => inst38.IN0
+I[7] => ~NO_FANOUT~
+I[8] => ~NO_FANOUT~
+I[9] => ~NO_FANOUT~
+
+
+|digital_clock|kim_DialPad2Bin:inst26
+OUT[0] <= D0.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= D1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= D2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= D3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= D4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= D5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= D6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= D7.DB_MAX_OUTPUT_PORT_TYPE
+OUT[8] <= D8.DB_MAX_OUTPUT_PORT_TYPE
+OUT[9] <= D9.DB_MAX_OUTPUT_PORT_TYPE
+IE => pulse_generator:inst26.IE
+I2 => inst28.IN0
+I2 => kim_BCD_decorder:indfsst.I2
+I4 => inst28.IN1
+I4 => kim_BCD_decorder:indfsst.I4
+I3 => inst28.IN2
+I3 => kim_BCD_decorder:indfsst.I3
+I5 => inst28.IN3
+I5 => kim_BCD_decorder:indfsst.I5
+I7 => inst28.IN4
+I7 => kim_BCD_decorder:indfsst.I7
+I6 => inst28.IN5
+I6 => kim_BCD_decorder:indfsst.I6
+I8 => inst28.IN6
+I8 => kim_BCD_decorder:indfsst.I8
+I9 => inst28.IN7
+I9 => kim_BCD_decorder:indfsst.I9
+I1 => inst29.IN0
+I1 => kim_BCD_decorder:indfsst.I1
+I0 => inst29.IN1
+I0 => kim_BCD_decorder:indfsst.I0
+CLK => pulse_generator:inst26.CLK
+zero => full_adder:inassfaafst.IC
+zero => full_adder:inst17.IC
+zero => ham_HA:inst16.B
+
+
+|digital_clock|kim_DialPad2Bin:inst26|pulse_generator:inst26
+P <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+IE => inst6.IN0
+CLK => inst.CLK
+CLK => inst1.CLK
+SWITCH => inst.DATAIN
+
+
+|digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst25
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:infdsst19
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:inst1dssddsd8
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:insdsfdft17
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:insdafdfsst16
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:inst15
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:inst14
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:inassfaafst
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst24
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst23
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst22
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst21
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst20
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:inst19
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:inst18
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|full_adder:inst17
+OC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+IA => inst4.IN0
+IA => inst.IN0
+IB => inst4.IN1
+IB => inst.IN1
+IC => inst3.IN0
+IC => inst1.IN1
+OS <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|kim_DialPad2Bin:inst26|kim_BCD_decorder:indfsst
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I9 => inst2.IN0
+I9 => inst5.IN0
+I8 => inst2.IN1
+O2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I4 => inst3.IN0
+I6 => inst3.IN1
+I6 => inst4.IN1
+I7 => inst3.IN2
+I7 => inst5.IN1
+I7 => inst4.IN2
+I5 => inst3.IN3
+I5 => inst1.IN1
+O0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+I3 => inst1.IN0
+I3 => inst4.IN3
+I1 => inst1.IN2
+O1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+I2 => inst4.IN0
+I0 => ~NO_FANOUT~
+
+
+|digital_clock|kim_DialPad2Bin:inst26|ham_HA:inst16
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |digital_clock|seven_segment:inst1762163

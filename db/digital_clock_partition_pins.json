@@ -4,26 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "H4",
-					"strict" : false
-				},
-				{
-					"name" : "H3",
-					"strict" : false
-				},
-				{
-					"name" : "H2",
-					"strict" : false
-				},
-				{
-					"name" : "H1",
-					"strict" : false
-				},
-				{
-					"name" : "H0",
-					"strict" : false
-				},
-				{
 					"name" : "My_H0[6]",
 					"strict" : false
 				},
@@ -52,6 +32,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "My_H1[6]",
+					"strict" : false
+				},
+				{
 					"name" : "My_H1[5]",
 					"strict" : false
 				},
@@ -61,6 +45,10 @@
 				},
 				{
 					"name" : "My_H1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "My_H1[1]",
 					"strict" : false
 				},
 				{
@@ -208,6 +196,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Your_H1[6]",
+					"strict" : false
+				},
+				{
 					"name" : "Your_H1[5]",
 					"strict" : false
 				},
@@ -217,6 +209,10 @@
 				},
 				{
 					"name" : "Your_H1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Your_H1[1]",
 					"strict" : false
 				},
 				{
@@ -336,6 +332,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Zero",
+					"strict" : false
+				},
+				{
 					"name" : "Mode",
 					"strict" : false
 				},
@@ -344,63 +344,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "S",
+					"name" : "Send",
 					"strict" : false
 				},
 				{
-					"name" : "YourCode[5]",
-					"strict" : false
-				},
-				{
-					"name" : "YourCode[6]",
-					"strict" : false
-				},
-				{
-					"name" : "YourCode[1]",
-					"strict" : false
-				},
-				{
-					"name" : "YourCode[2]",
-					"strict" : false
-				},
-				{
-					"name" : "YourCode[4]",
-					"strict" : false
-				},
-				{
-					"name" : "YourCode[0]",
-					"strict" : false
-				},
-				{
-					"name" : "MyCode[5]",
-					"strict" : false
-				},
-				{
-					"name" : "MyCode[6]",
-					"strict" : false
-				},
-				{
-					"name" : "MyCode[1]",
-					"strict" : false
-				},
-				{
-					"name" : "MyCode[2]",
-					"strict" : false
-				},
-				{
-					"name" : "MyCode[4]",
-					"strict" : false
-				},
-				{
-					"name" : "MyCode[0]",
-					"strict" : false
-				},
-				{
-					"name" : "MyCode[3]",
-					"strict" : false
-				},
-				{
-					"name" : "YourCode[3]",
+					"name" : "Add_1H_Switch",
 					"strict" : false
 				},
 				{
@@ -408,7 +356,83 @@
 					"strict" : false
 				},
 				{
-					"name" : "Add_1H_Switch",
+					"name" : "U_Dial_8",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_9",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_7",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_6",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_3",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_2",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_5",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_4",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_8",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_9",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_7",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_6",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_3",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_2",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_5",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_4",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_1",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_1",
+					"strict" : false
+				},
+				{
+					"name" : "U_Dial_0",
+					"strict" : false
+				},
+				{
+					"name" : "MyDial_0",
 					"strict" : false
 				}
 			]

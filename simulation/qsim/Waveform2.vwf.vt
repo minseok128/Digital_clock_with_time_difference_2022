@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/01/2022 21:04:58"
+// Generated on "12/01/2022 23:47:57"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          digital_clock
 // 
@@ -34,9 +34,28 @@ reg Add_1H_Switch;
 reg Add_1M_Switch;
 reg CLK;
 reg Mode;
-reg [9:0] MyCode;
-reg S;
-reg [9:0] YourCode;
+reg MyDial_0;
+reg MyDial_1;
+reg MyDial_2;
+reg MyDial_3;
+reg MyDial_4;
+reg MyDial_5;
+reg MyDial_6;
+reg MyDial_7;
+reg MyDial_8;
+reg MyDial_9;
+reg Send;
+reg U_Dial_0;
+reg U_Dial_1;
+reg U_Dial_2;
+reg U_Dial_3;
+reg U_Dial_4;
+reg U_Dial_5;
+reg U_Dial_6;
+reg U_Dial_7;
+reg U_Dial_8;
+reg U_Dial_9;
+reg Zero;
 // wires                                               
 wire H0;
 wire H1;
@@ -74,170 +93,231 @@ digital_clock i1 (
 	.My_M1(My_M1),
 	.My_S0(My_S0),
 	.My_S1(My_S1),
-	.MyCode(MyCode),
-	.S(S),
+	.MyDial_0(MyDial_0),
+	.MyDial_1(MyDial_1),
+	.MyDial_2(MyDial_2),
+	.MyDial_3(MyDial_3),
+	.MyDial_4(MyDial_4),
+	.MyDial_5(MyDial_5),
+	.MyDial_6(MyDial_6),
+	.MyDial_7(MyDial_7),
+	.MyDial_8(MyDial_8),
+	.MyDial_9(MyDial_9),
+	.Send(Send),
+	.U_Dial_0(U_Dial_0),
+	.U_Dial_1(U_Dial_1),
+	.U_Dial_2(U_Dial_2),
+	.U_Dial_3(U_Dial_3),
+	.U_Dial_4(U_Dial_4),
+	.U_Dial_5(U_Dial_5),
+	.U_Dial_6(U_Dial_6),
+	.U_Dial_7(U_Dial_7),
+	.U_Dial_8(U_Dial_8),
+	.U_Dial_9(U_Dial_9),
 	.Your_H0(Your_H0),
 	.Your_H1(Your_H1),
 	.Your_M0(Your_M0),
 	.Your_M1(Your_M1),
 	.Your_S0(Your_S0),
 	.Your_S1(Your_S1),
-	.YourCode(YourCode)
+	.Zero(Zero)
 );
 initial 
 begin 
 #100000000 $finish;
 end 
 
+// Zero
+initial
+begin
+	Zero = 1'b0;
+end 
+
 // CLK
 always
 begin
 	CLK = 1'b0;
-	CLK = #10000 1'b1;
-	#10000;
+	CLK = #5000 1'b1;
+	#5000;
 end 
 
 // Mode
 initial
 begin
-	Mode = 1'b1;
-	Mode = #80000 1'b0;
-	Mode = #1040000 1'b1;
-end 
-
-// Add_1M_Switch
-initial
-begin
-	Add_1M_Switch = 1'b0;
-	Add_1M_Switch = #80000 1'b1;
-	Add_1M_Switch = #80000 1'b0;
-	Add_1M_Switch = #80000 1'b1;
-	Add_1M_Switch = #80000 1'b0;
+	Mode = 1'b0;
+	Mode = #1600000 1'b1;
 end 
 
 // Add_1H_Switch
 initial
 begin
 	Add_1H_Switch = 1'b0;
+	Add_1H_Switch = #40000 1'b1;
+	Add_1H_Switch = #40000 1'b0;
+	Add_1H_Switch = #120000 1'b1;
+	Add_1H_Switch = #40000 1'b0;
 	Add_1H_Switch = #80000 1'b1;
+	Add_1H_Switch = #40000 1'b0;
+	Add_1H_Switch = #40000 1'b1;
 	Add_1H_Switch = #80000 1'b0;
 	Add_1H_Switch = #80000 1'b1;
-	Add_1H_Switch = #80000 1'b0;
+	Add_1H_Switch = #40000 1'b0;
 	Add_1H_Switch = #80000 1'b1;
-	Add_1H_Switch = #80000 1'b0;
+	Add_1H_Switch = #40000 1'b0;
 	Add_1H_Switch = #80000 1'b1;
-	Add_1H_Switch = #80000 1'b0;
-end 
-// MyCode[ 9 ]
-initial
-begin
-	MyCode[9] = 1'b0;
-end 
-// MyCode[ 8 ]
-initial
-begin
-	MyCode[8] = 1'b0;
-end 
-// MyCode[ 7 ]
-initial
-begin
-	MyCode[7] = 1'b0;
-end 
-// MyCode[ 6 ]
-initial
-begin
-	MyCode[6] = 1'b1;
-	MyCode[6] = #70000 1'b0;
-end 
-// MyCode[ 5 ]
-initial
-begin
-	MyCode[5] = 1'b0;
-end 
-// MyCode[ 4 ]
-initial
-begin
-	MyCode[4] = 1'b1;
-	MyCode[4] = #70000 1'b0;
-end 
-// MyCode[ 3 ]
-initial
-begin
-	MyCode[3] = 1'b0;
-end 
-// MyCode[ 2 ]
-initial
-begin
-	MyCode[2] = 1'b0;
-end 
-// MyCode[ 1 ]
-initial
-begin
-	MyCode[1] = 1'b1;
-	MyCode[1] = #70000 1'b0;
-end 
-// MyCode[ 0 ]
-initial
-begin
-	MyCode[0] = 1'b0;
-end 
-// YourCode[ 9 ]
-initial
-begin
-	YourCode[9] = 1'b0;
-end 
-// YourCode[ 8 ]
-initial
-begin
-	YourCode[8] = 1'b0;
-end 
-// YourCode[ 7 ]
-initial
-begin
-	YourCode[7] = 1'b0;
-end 
-// YourCode[ 6 ]
-initial
-begin
-	YourCode[6] = 1'b0;
-end 
-// YourCode[ 5 ]
-initial
-begin
-	YourCode[5] = 1'b0;
-end 
-// YourCode[ 4 ]
-initial
-begin
-	YourCode[4] = 1'b0;
-end 
-// YourCode[ 3 ]
-initial
-begin
-	YourCode[3] = 1'b0;
-end 
-// YourCode[ 2 ]
-initial
-begin
-	YourCode[2] = 1'b0;
-end 
-// YourCode[ 1 ]
-initial
-begin
-	YourCode[1] = 1'b0;
-end 
-// YourCode[ 0 ]
-initial
-begin
-	YourCode[0] = 1'b1;
-	YourCode[0] = #70000 1'b0;
+	Add_1H_Switch = #40000 1'b0;
+	Add_1H_Switch = #160000 1'b1;
+	Add_1H_Switch = #40000 1'b0;
 end 
 
-// S
+// Add_1M_Switch
 initial
 begin
-	S = 1'b1;
-	S = #60000 1'b0;
+	Add_1M_Switch = 1'b0;
+	Add_1M_Switch = #40000 1'b1;
+	Add_1M_Switch = #40000 1'b0;
+	Add_1M_Switch = #40000 1'b1;
+	Add_1M_Switch = #40000 1'b0;
+	Add_1M_Switch = #40000 1'b1;
+	Add_1M_Switch = #40000 1'b0;
+	Add_1M_Switch = #80000 1'b1;
+	Add_1M_Switch = #40000 1'b0;
+end 
+
+// MyDial_0
+initial
+begin
+	MyDial_0 = 1'b0;
+end 
+
+// MyDial_1
+initial
+begin
+	MyDial_1 = 1'b0;
+end 
+
+// MyDial_2
+initial
+begin
+	MyDial_2 = 1'b0;
+	MyDial_2 = #240000 1'b1;
+	MyDial_2 = #40000 1'b0;
+end 
+
+// MyDial_3
+initial
+begin
+	MyDial_3 = 1'b0;
+end 
+
+// MyDial_4
+initial
+begin
+	MyDial_4 = 1'b0;
+end 
+
+// MyDial_5
+initial
+begin
+	MyDial_5 = 1'b0;
+end 
+
+// MyDial_6
+initial
+begin
+	MyDial_6 = 1'b0;
+end 
+
+// MyDial_7
+initial
+begin
+	MyDial_7 = 1'b0;
+end 
+
+// MyDial_8
+initial
+begin
+	MyDial_8 = 1'b0;
+	MyDial_8 = #120000 1'b1;
+	MyDial_8 = #40000 1'b0;
+end 
+
+// MyDial_9
+initial
+begin
+	MyDial_9 = 1'b0;
+end 
+
+// U_Dial_0
+initial
+begin
+	U_Dial_0 = 1'b0;
+end 
+
+// U_Dial_1
+initial
+begin
+	U_Dial_1 = 1'b0;
+end 
+
+// U_Dial_2
+initial
+begin
+	U_Dial_2 = 1'b0;
+end 
+
+// U_Dial_3
+initial
+begin
+	U_Dial_3 = 1'b0;
+end 
+
+// U_Dial_4
+initial
+begin
+	U_Dial_4 = 1'b0;
+end 
+
+// U_Dial_5
+initial
+begin
+	U_Dial_5 = 1'b0;
+end 
+
+// U_Dial_6
+initial
+begin
+	U_Dial_6 = 1'b0;
+	U_Dial_6 = #360000 1'b1;
+	U_Dial_6 = #40000 1'b0;
+end 
+
+// U_Dial_7
+initial
+begin
+	U_Dial_7 = 1'b0;
+end 
+
+// U_Dial_8
+initial
+begin
+	U_Dial_8 = 1'b0;
+	U_Dial_8 = #200000 1'b1;
+	U_Dial_8 = #40000 1'b0;
+end 
+
+// U_Dial_9
+initial
+begin
+	U_Dial_9 = 1'b0;
+end 
+
+// Send
+initial
+begin
+	Send = 1'b0;
+	Send = #520000 1'b1;
+	Send = #40000 1'b0;
 end 
 endmodule
 

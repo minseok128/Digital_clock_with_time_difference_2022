@@ -10,46 +10,46 @@ z2
 cModel Technology
 Z0 dC:/Users/minse/Desktop/WORK/Programing/Q/digital_clock/simulation/qsim
 vdigital_clock
-Z1 !s110 1669896301
+Z1 !s110 1669906080
 !i10b 1
-!s100 7?f4b4R4NQQCiUAQKM]YK3
+!s100 L>[0e@8BnQlibGYQC>FWZ0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IFWWn`]aCbg4RWFiE1J2M@3
+IM_1ULSD9YaSP2e0>k_0PK2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 dC:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim
-Z5 w1669896300
+Z5 w1669906078
 Z6 8digital_clock.vo
 Z7 Fdigital_clock.vo
-!i122 172
-L0 32 5280
+!i122 206
+L0 32 6751
 Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1669896301.000000
+Z9 !s108 1669906080.000000
 Z10 !s107 digital_clock.vo|
 Z11 !s90 -work|work|digital_clock.vo|
 !i113 1
 Z12 o-work work
 Z13 tCvgOpt 0
 vdigital_clock_vlg_vec_tst
-!s110 1669896302
+R1
 !i10b 1
-!s100 6H22`VR1On=HV]jWcP5cF1
+!s100 0YNV31lJzAKPD2LlYIQ4V2
 R2
-I`3LhGV:jB8?[4[bXQ3L_T2
+IA3YaSEgi4PWA8d2ZjVd4n0
 R3
 R4
-w1669896298
+w1669906077
 8Waveform2.vwf.vt
 FWaveform2.vwf.vt
-!i122 173
-L0 30 213
+!i122 207
+L0 30 293
 R8
 r1
 !s85 0
 31
-!s108 1669896302.000000
+R9
 !s107 Waveform2.vwf.vt|
 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1
@@ -58,16 +58,16 @@ R13
 vhard_block
 R1
 !i10b 1
-!s100 cEB?WQ0`:BlDZ^T>EdEJm2
+!s100 j`T3hjJS]DXC3`YP75MA52
 R2
-If]BZ2QNC6N3BS7U_?R`_[2
+ISMdm[RR6e5Dh`]DnRk^kZ0
 R3
 R4
 R5
 R6
 R7
-!i122 172
-L0 5313 45
+!i122 206
+L0 6784 45
 R8
 r1
 !s85 0
@@ -171,23 +171,23 @@ R20
 R12
 R13
 vTest
-Z23 !s110 1669884509
+Z23 !s110 1669903431
 !i10b 1
-!s100 ef;Ta1LdB5A`8CNKYVRUV2
+!s100 j^A[`6MgffDinj2g7zhgi2
 R2
-I=Cef_TB>OcHBLa825YP@@1
+I^I2ImQ<86?CNnM]oL7<gT1
 R3
 R4
-w1669884507
+w1669903429
 R6
 R7
-!i122 162
-L0 32 621
+!i122 202
+L0 32 1720
 R8
 r1
 !s85 0
 31
-Z24 !s108 1669884509.000000
+!s108 1669903430.000000
 R10
 R11
 !i113 1
@@ -197,23 +197,23 @@ n@test
 vTest_vlg_vec_tst
 R23
 !i10b 1
-!s100 9Don=oP]omc2c8[US5MXY0
+!s100 ^e^=dhjHh[U_:?@An3TKA1
 R2
-I5;24<@m>nN7FW=P;=ceYd0
+I_Regb0_VmlB^R3=9h=5i32
 R3
 R4
-w1669884506
-8Waveform4.vwf.vt
-FWaveform4.vwf.vt
-!i122 163
-L0 30 123
+w1669903428
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+!i122 203
+L0 30 124
 R8
 r1
 !s85 0
 31
-R24
-!s107 Waveform4.vwf.vt|
-!s90 -work|work|Waveform4.vwf.vt|
+!s108 1669903431.000000
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
 !i113 1
 R12
 R13

@@ -10,46 +10,46 @@ z2
 cModel Technology
 Z0 dC:/Users/minse/Desktop/WORK/Programing/Q/digital_clock/simulation/qsim
 vdigital_clock
-Z1 !s110 1669630138
+Z1 !s110 1669896301
 !i10b 1
-!s100 cd?FbUl29JU[K>BZXhg@i1
+!s100 7?f4b4R4NQQCiUAQKM]YK3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IL4k?fI09EV5J`Jz426C3A0
+IFWWn`]aCbg4RWFiE1J2M@3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 dC:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim
-Z5 w1669630134
+Z5 w1669896300
 Z6 8digital_clock.vo
 Z7 Fdigital_clock.vo
-!i122 146
-L0 32 4458
+!i122 172
+L0 32 5280
 Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1669630138.000000
+Z9 !s108 1669896301.000000
 Z10 !s107 digital_clock.vo|
 Z11 !s90 -work|work|digital_clock.vo|
 !i113 1
 Z12 o-work work
 Z13 tCvgOpt 0
 vdigital_clock_vlg_vec_tst
-!s110 1669630139
+!s110 1669896302
 !i10b 1
-!s100 ;Q09d>S6GfbeSV?U5MBc=3
+!s100 6H22`VR1On=HV]jWcP5cF1
 R2
-Ij[bGFW3I0l:^WiTl]h94d2
+I`3LhGV:jB8?[4[bXQ3L_T2
 R3
 R4
-w1669630132
+w1669896298
 8Waveform2.vwf.vt
 FWaveform2.vwf.vt
-!i122 147
-L0 30 197
+!i122 173
+L0 30 213
 R8
 r1
 !s85 0
 31
-R9
+!s108 1669896302.000000
 !s107 Waveform2.vwf.vt|
 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1
@@ -58,16 +58,16 @@ R13
 vhard_block
 R1
 !i10b 1
-!s100 9FPKj>dgBSDgShiL`E1^B2
+!s100 cEB?WQ0`:BlDZ^T>EdEJm2
 R2
-IDE;IY1^I67=<iYI:K:0DD2
+If]BZ2QNC6N3BS7U_?R`_[2
 R3
 R4
 R5
 R6
 R7
-!i122 146
-L0 4491 45
+!i122 172
+L0 5313 45
 R8
 r1
 !s85 0
@@ -170,3 +170,51 @@ R20
 !i113 1
 R12
 R13
+vTest
+Z23 !s110 1669884509
+!i10b 1
+!s100 ef;Ta1LdB5A`8CNKYVRUV2
+R2
+I=Cef_TB>OcHBLa825YP@@1
+R3
+R4
+w1669884507
+R6
+R7
+!i122 162
+L0 32 621
+R8
+r1
+!s85 0
+31
+Z24 !s108 1669884509.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@test
+vTest_vlg_vec_tst
+R23
+!i10b 1
+!s100 9Don=oP]omc2c8[US5MXY0
+R2
+I5;24<@m>nN7FW=P;=ceYd0
+R3
+R4
+w1669884506
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+!i122 163
+L0 30 123
+R8
+r1
+!s85 0
+31
+R24
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R12
+R13
+n@test_vlg_vec_tst

@@ -182,7 +182,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1176 -8 1352 8)
+	(rect 1360 696 1536 712)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "sub_S0" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
@@ -198,7 +198,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1176 104 1352 120)
+	(rect 1208 648 1384 664)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "sub_S1" (rect 90 0 124 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -214,7 +214,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1176 208 1352 224)
+	(rect 1224 616 1400 632)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "sub_S2" (rect 90 0 124 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -230,7 +230,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1176 312 1352 328)
+	(rect 1240 576 1416 592)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "sub_S3" (rect 90 0 124 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -246,7 +246,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1176 416 1352 432)
+	(rect 1304 552 1480 568)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "sub_S4" (rect 90 0 124 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -262,7 +262,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1176 528 1352 544)
+	(rect 1448 528 1624 544)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "sub_S5" (rect 90 0 124 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -1694,6 +1694,70 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 936 544)
 	(pt 856 544)
+)
+(connector
+	(pt 1176 0)
+	(pt 1184 0)
+)
+(connector
+	(pt 1184 0)
+	(pt 1184 704)
+)
+(connector
+	(pt 1184 704)
+	(pt 1360 704)
+)
+(connector
+	(pt 1200 112)
+	(pt 1200 656)
+)
+(connector
+	(pt 1176 112)
+	(pt 1200 112)
+)
+(connector
+	(pt 1200 656)
+	(pt 1208 656)
+)
+(connector
+	(pt 1216 216)
+	(pt 1216 624)
+)
+(connector
+	(pt 1176 216)
+	(pt 1216 216)
+)
+(connector
+	(pt 1216 624)
+	(pt 1224 624)
+)
+(connector
+	(pt 1176 536)
+	(pt 1448 536)
+)
+(connector
+	(pt 1232 320)
+	(pt 1232 584)
+)
+(connector
+	(pt 1176 320)
+	(pt 1232 320)
+)
+(connector
+	(pt 1232 584)
+	(pt 1240 584)
+)
+(connector
+	(pt 1296 424)
+	(pt 1296 560)
+)
+(connector
+	(pt 1176 424)
+	(pt 1296 424)
+)
+(connector
+	(pt 1296 560)
+	(pt 1304 560)
 )
 (junction (pt 56 424))
 (junction (pt 80 320))

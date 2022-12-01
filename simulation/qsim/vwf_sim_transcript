@@ -26,11 +26,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Nov 28 19:08:51 2022
+    Info: Processing started: Thu Dec 01 21:04:58 2022
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off digital_clock -c digital_clock --vector_source=C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/Waveform2.vwf --testbench_file=C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim/Waveform2.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-st bench files
+ce file when writing test bench files
 
 Completed successfully. 
 
@@ -57,16 +57,16 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Nov 28 19:08:53 2022
+    Info: Processing started: Thu Dec 01 21:04:59 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim/ digital_clock -c digital_clock
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
 Info (204019): Generated file digital_clock.vo in folder "C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4655 megabytes
-    Info: Processing ended: Mon Nov 28 19:08:55 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4657 megabytes
+    Info: Processing ended: Thu Dec 01 21:05:00 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
@@ -82,7 +82,6 @@ c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do digital_clock.do
 
 Reading pref.tcl
 
-
 # 2020.1
 
 
@@ -91,7 +90,7 @@ Reading pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:08:58 on Nov 28,2022
+# Start time: 21:05:01 on Dec 01,2022
 # vlog -work work digital_clock.vo 
 
 # -- Compiling module digital_clock
@@ -99,23 +98,22 @@ Reading pref.tcl
 # 
 # Top level modules:
 # 	digital_clock
-# End time: 19:08:58 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 21:05:01 on Dec 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:08:58 on Nov 28,2022
+# Start time: 21:05:02 on Dec 01,2022
 # vlog -work work Waveform2.vwf.vt 
 
 # -- Compiling module digital_clock_vlg_vec_tst
-
 # 
 # Top level modules:
 # 	digital_clock_vlg_vec_tst
-# End time: 19:08:59 on Nov 28,2022, Elapsed time: 0:00:01
+# End time: 21:05:02 on Dec 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.digital_clock_vlg_vec_tst 
-# Start time: 19:08:59 on Nov 28,2022
+# Start time: 21:05:02 on Dec 01,2022
 # Loading work.digital_clock_vlg_vec_tst
 # Loading work.digital_clock
 # Loading work.hard_block
@@ -130,13 +128,13 @@ Reading pref.tcl
 # Loading fiftyfivenm_ver.fiftyfivenm_adcblock
 # Loading altera_ver.PRIM_GDFF_LOW
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC1~ '.  Expected 8, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /digital_clock_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~  File: digital_clock.vo Line: 4289
-# ** Warning: (vsim-3722) digital_clock.vo(4289): [TFMPC] - Missing connection for port 'clk_dft'.
+#    Time: 0 ps  Iteration: 0  Instance: /digital_clock_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~  File: digital_clock.vo Line: 5111
+# ** Warning: (vsim-3722) digital_clock.vo(5111): [TFMPC] - Missing connection for port 'clk_dft'.
 # after#26
 
-# ** Note: $finish    : Waveform2.vwf.vt(99)
+# ** Note: $finish    : Waveform2.vwf.vt(89)
 #    Time: 100 us  Iteration: 0  Instance: /digital_clock_vlg_vec_tst
-# End time: 19:09:00 on Nov 28,2022, Elapsed time: 0:00:01
+# End time: 21:05:03 on Dec 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 2
 
 Completed successfully. 
@@ -149,7 +147,7 @@ Reading C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim/digital_clock_20221128190901.sim.vwf
+Writing the resulting VWF to C:/Users/minse/Desktop/WORK/Programing/Q/digital_clock_assemble/Digital_clock_with_time_difference_2022/simulation/qsim/digital_clock_20221201210503.sim.vwf
 
 Finished VCD to VWF conversion.
 
